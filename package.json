@@ -1,14 +1,19 @@
 {
   "name": "our-shared-key",
   "version": "0.1.0",
+  "author": "Rio Weber",
+  "description": "https://medium.com/riow/start-to-finish-write-deploy-a-vue-app-setup-auto-deploy-enable-authentication-link-a-f35ac675ebfb",
+  "license": "Apache-2.0",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.2",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
