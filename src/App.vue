@@ -15,12 +15,6 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /*
  * Globals
  */
@@ -40,6 +34,9 @@
 body {
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .cover-container {
