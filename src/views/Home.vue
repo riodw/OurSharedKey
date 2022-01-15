@@ -14,31 +14,14 @@
         OurSharedKey 🗝
       </a>
     </main>
-    <div class="card w-50 text-center m-auto">
-      <div
-        class="tenor-gif-embed"
-        data-postid="13270512"
-        data-share-method="host"
-        data-aspect-ratio="1.32773"
-        data-width="100%"
-      >
-        <a
-          href="https://tenor.com/view/web-webdevelopper-developper-computer-kid-computer-gif-13270512"
-          >Web Webdevelopper GIF</a
-        >from <a href="https://tenor.com/search/web-gifs">Web GIFs</a>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
-  components: {
-    // HelloWorld,
-  },
+  components: {},
 };
 </script>

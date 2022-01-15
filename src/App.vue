@@ -15,10 +15,6 @@
 </template>
 
 <style lang="scss">
-/*
- * Globals
- */
-
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
