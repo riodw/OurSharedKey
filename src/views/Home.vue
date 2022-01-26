@@ -17,21 +17,21 @@
     <hr />
     <div>
       <button
-        v-on:click="auth.loginWithPopup()"
+        @click="auth.loginWithPopup()"
         :disabled="auth.authenticated"
         class="btn btn-primary me-1"
       >
         Login with PopUp
       </button>
       <button
-        v-on:click="auth.loginWithRedirect()"
+        @click="auth.loginWithRedirect()"
         :disabled="auth.authenticated"
         class="btn btn-primary me-1"
       >
         Login with Redirect
       </button>
       <button
-        v-on:click="auth.logout()"
+        @click="auth.logout()"
         :disabled="!auth.authenticated"
         class="btn btn-secondary"
       >

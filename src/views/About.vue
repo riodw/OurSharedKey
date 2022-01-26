@@ -1,14 +1,14 @@
 <template>
   <div class="about">
     <FullCalendar :options="calendarOptions" />
-    <br />
-    <h1>
+    <h2>
       You are logged in as {{ auth.user.name }} ({{ auth.user.nickname }})
-    </h1>
+    </h2>
     <img :src="auth.user.picture" alt="Profile picture" />
     <br />
-
-    <button v-on:click="auth.logout()">Logout</button>
+    <button @click="auth.logout()" class="btn btn-secondary mt-2">
+      Logout
+    </button>
   </div>
 </template>
 
