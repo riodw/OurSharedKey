@@ -1,5 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/Home.vue";
+// @ is an alias to /src
+import Home from "@/views/Home.vue";
+import { AuthenticationGuard } from "vue-auth0-plugin";
 
 const routes = [
   {
@@ -15,6 +17,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    beforeEnter: [AuthenticationGuard],
   },
 ];
 

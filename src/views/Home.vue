@@ -14,6 +14,37 @@
         OurSharedKey 🗝
       </a>
     </main>
+    <hr />
+    <div>
+      <button
+        v-on:click="auth.loginWithPopup()"
+        :disabled="auth.authenticated"
+        class="btn btn-primary me-1"
+      >
+        Login with PopUp
+      </button>
+      <button
+        v-on:click="auth.loginWithRedirect()"
+        :disabled="auth.authenticated"
+        class="btn btn-primary me-1"
+      >
+        Login with Redirect
+      </button>
+      <button
+        v-on:click="auth.logout()"
+        :disabled="!auth.authenticated"
+        class="btn btn-secondary"
+      >
+        Logout
+      </button>
+    </div>
+    <div class="mt-2">
+      <div>
+        {{ auth.authenticated ? "Authenticated" : "Not authenticated" }}
+      </div>
+      <div>{{ auth.loading ? "Loading" : "Not loading" }}</div>
+      <div>User: {{ auth.user?.name || "NO_USER" }}</div>
+    </div>
   </div>
 </template>
 
@@ -22,6 +53,7 @@
 
 export default {
   name: "Home",
+  inject: ["auth"],
   components: {},
 };
 </script>
