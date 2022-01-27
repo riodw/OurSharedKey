@@ -17,6 +17,7 @@
 import FullCalendar from "@fullcalendar/vue3";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
+import listPlugin from "@fullcalendar/list";
 
 export default {
   name: "About",
@@ -27,8 +28,11 @@ export default {
   data() {
     return {
       calendarOptions: {
-        plugins: [dayGridPlugin, interactionPlugin],
+        plugins: [dayGridPlugin, interactionPlugin, listPlugin],
         initialView: "dayGridMonth",
+        headerToolbar: {
+          center: "dayGridMonth,listWeek", // buttons for switching between views
+        },
       },
     };
   },

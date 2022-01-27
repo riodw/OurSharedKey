@@ -45,6 +45,7 @@
       <div>{{ auth.loading ? "Loading" : "Not loading" }}</div>
       <div>User: {{ auth.user?.name || "NO_USER" }}</div>
       <img v-if="auth.user" :src="auth.user.picture" alt="Profile picture" />
+      <pre class="text-start">{{ auth.user }}</pre>
     </div>
   </div>
 </template>
