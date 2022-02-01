@@ -1,67 +1,16 @@
 <template>
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
+  <div class="app">
+    <!-- <header class="mb-auto">
+    <nav class="nav nav-masthead justify-content-center float-md-end">
         <router-link to="/" class="nav-link">Home</router-link>
         <router-link to="/about" class="nav-link">About</router-link>
+        <router-link to="/profile" class="nav-link">Profile</router-link>
       </nav>
-    </div>
-  </header>
-  <router-view />
-  <footer class="mt-auto text-white-50">
-    <p>by 👑 Rio</p>
-  </footer>
+  </header> -->
+    <router-view />
+  </div>
 </template>
 
 <style lang="scss">
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
-
-/*
- * Base structure
- */
-
-body {
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.cover-container {
-  max-width: 42em;
-}
-
-/*
- * Header
- */
-
-.nav-masthead .nav-link {
-  padding: 0.25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: transparent;
-  border-bottom: 0.25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
+// https://startbootstrap.github.io/startbootstrap-new-age/#!
 </style>

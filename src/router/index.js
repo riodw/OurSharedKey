@@ -19,6 +19,12 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
     beforeEnter: [AuthenticationGuard],
   },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: () => import("../views/Profile.vue"),
+    beforeEnter: [AuthenticationGuard],
+  },
 ];
 
 const router = createRouter({

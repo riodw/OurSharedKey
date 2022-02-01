@@ -6,8 +6,9 @@ import store from "./store";
 // auth0
 import VueAuth0Plugin from "vue-auth0-plugin";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const app = createApp(App);
 
