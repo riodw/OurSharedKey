@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow bg-white">
+    <!-- https://startbootstrap.github.io/startbootstrap-new-age/#download -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow bg-white"
+    >
       <div class="container px-5">
         <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
         <button
@@ -18,20 +21,22 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link me-lg-3" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-lg-3" href="#download">Download</a>
+              <a
+                href="javascript:document.getElementById('features').scrollIntoView(true)"
+                class="nav-link me-lg-3"
+              >
+                Features
+              </a>
             </li>
           </ul>
           <button
+            @click="auth.loginWithRedirect()"
+            :disabled="auth.authenticated"
             class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0"
-            data-bs-toggle="modal"
-            data-bs-target="#feedbackModal"
           >
             <span class="d-flex align-items-center">
-              <i class="bi-chat-text-fill me-2"></i>
-              <span class="small">Send Feedback</span>
+              <i class="bi-box-arrow-in-right me-2"></i>
+              Login
             </span>
           </button>
         </div>
@@ -87,12 +92,12 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
-                  <linearGradient gradientTransform="rotate(45)">
-                    <stop class="gradient-start-color" offset="0%"></stop>
-                    <stop class="gradient-end-color" offset="100%"></stop>
+                  <linearGradient id="grad1" gradientTransform="rotate(45)">
+                    <stop offset="0%" stop-color="blue"></stop>
+                    <stop offset="100%" stop-color="red"></stop>
                   </linearGradient>
                 </defs>
-                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50" fill="url(#grad1)"></circle>
               </svg>
               <div class="device-wrapper w-50">
                 <div
@@ -137,7 +142,7 @@
         </div>
       </div>
     </aside>
-    <section class="py-5 my-5">
+    <section id="features" class="py-5 my-5" style="scroll-margin: 4rem">
       <div class="container px-5">
         <div class="row gx-5 align-items-center">
           <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
@@ -210,12 +215,12 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
-                  <linearGradient gradientTransform="rotate(45)">
-                    <stop class="gradient-start-color" offset="0%"></stop>
-                    <stop class="gradient-end-color" offset="100%"></stop>
+                  <linearGradient id="grad2" gradientTransform="rotate(45)">
+                    <stop offset="0%"></stop>
+                    <stop offset="100%" stop-color="blue"></stop>
                   </linearGradient>
                 </defs>
-                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50" fill="url(#grad2)"></circle>
               </svg>
               <div class="device-wrapper w-75 end-0">
                 <div

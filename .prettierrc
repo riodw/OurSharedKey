@@ -1,0 +1,9 @@
+{
+  "printWidth": 79,
+  "tabWidth": 2,
+  "useTabs": false,
+  "quoteProps": "consistent",
+  "trailingComma": "es5",
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "ignore"
+}
